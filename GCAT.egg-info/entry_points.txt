@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = gcat:main
+      [console_scripts]
+      initialize_GCAT_db = gcat.scripts.initializedb:main
+      

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+    <head>
+        <title>Starter: {{ page_title }}</title>
+        <!-- Bootstrap core CSS -->
+        <link href="${request.static_url('gcat:static/bootstrap/css/bootstrap.min.css')}" rel="stylesheet">
+        <link href="${ request.static_url('gcat:static/registration_assets.css') }}" rel="stylesheet">
+    </head>
+    <body>
+
+    <div class="container">
+        <h1>${ page_title }</h1>
+
+        <p>
+            Output: <code id="output">00000</code>
+            <button id="update" class="btn btn-primary">Update</button>
+            <a href="#" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-edit"></span> Hello</a>
+        </p>
+    </div>
+
+    <script src="${ request.static_url('gcat:static/jquery-1.11.2.min.js') }}"></script>
+    <script src="${ request.static_url('gcat:static/registration_assets.js') }}"></script>
+    </body>
+</html>
